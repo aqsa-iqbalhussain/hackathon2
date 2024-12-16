@@ -25,11 +25,11 @@ export default function CartPage() {
             <img
               src="/photos/cartmen.jpg"
               alt="Nike Product"
-              className="w-24 md:w-[150px] h-[150px] object-cover rounded"
+              className="w-24  object-cover rounded"
             />
             <div className="ml-4 flex-1 text-[#757575] leading-tight">
               <h3 className="text-lg text-black">Nike Dri-FIT ADV TechKnit Ultra</h3>
-              <p className="text-sm text-[#757575]">Men's Short-Sleeve Running Top</p>
+              <p className="text-sm text-[#757575]">Men &apos;s Short-Sleeve Running Top</p>
               <p className="text-sm text-[#757575]">Ashen Slate/Cobalt Bliss</p>
               <p className="text-sm mt-1 flex items-center">
                 <span>Size</span>
@@ -49,7 +49,7 @@ export default function CartPage() {
           <div className="flex flex-wrap border-b pb-6 mb-6 items-start">
             <div className="ml-4 flex-1 text-[#757575] flex flex-col leading-6">
               <h3 className="text-black text-lg mt-1 text-center lg:text-left">Nike Air Max 97 SE</h3>
-              <p className="text-sm text-[#757575] mt-1 text-center lg:text-left">Men's Shoes</p>
+              <p className="text-sm text-[#757575] mt-1 text-center lg:text-left">Men &apos;s Shoes</p>
               <p className="text-sm text-[#757575] mt-1 text-center lg:text-left">Flat Pewter/Light Bone/Black/White</p>
               <div className="mt-2 flex items-center justify-center lg:justify-start space-x-4">
                 <span>Size</span>

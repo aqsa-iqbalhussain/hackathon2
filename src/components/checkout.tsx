@@ -13,7 +13,7 @@ export default function CheckoutPage() {
         How would you like to get your order?
       </h1>
       <p className="text-sm text-[#757575] mb-6 leading-5">
-      Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns.
+      Customs regulation for India require a copy of the recipient &apos;s KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns.
        If your KYC does not match your shipping address, please click the link for more information. <span className="underline ">Learn More</span>
       </p>
 
@@ -91,7 +91,7 @@ export default function CheckoutPage() {
 
         {/* CONTACT INFO */}
         <h2 className="text-lg font-semibold mt-6 mb-2">
-          What's your contact information?
+          What &apos;s your contact information?
         </h2>
         <div className="space-y-1">
         <input
@@ -109,7 +109,7 @@ export default function CheckoutPage() {
         </div>
 
         {/* PAN INFO */}
-        <h2 className="text-lg font-semibold mt-6 mb-2">What's your PAN?</h2>
+        <h2 className="text-lg font-semibold mt-6 mb-2">What &apos;s your PAN?</h2>
         <input
           type="text"
           placeholder="PAN"
@@ -189,7 +189,7 @@ export default function CheckoutPage() {
             className="rounded-md w-[208px] h-[208px]"
           />
           <div>
-            <h3 className="text-sm font-medium">Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top</h3>
+            <h3 className="text-sm font-medium">Nike Dri-FIT ADV TechKnit Ultra Men &apos;s Short-Sleeve Running Top</h3>
             <p className="text-sm text-[#8D8D8D]">Qty 1</p>
             <p className="text-sm text-[#8D8D8D]">Size L</p>
             <p className="text-sm text-[#8D8D8D]">₹ 3,895.00</p>
@@ -203,7 +203,7 @@ export default function CheckoutPage() {
             className="rounded-md w-[208px] h-[208px]"
           />
           <div>
-            <h3 className="text-sm font-medium">Nike Air Max 97 SE Men's Shoes</h3>
+            <h3 className="text-sm font-medium">Nike Air Max 97 SE Men &apos;s Shoes</h3>
             <p className="text-sm text-[#8D8D8D]">Qty 1</p>
             <p className="text-sm text-[#8D8D8D]">Size UK 8</p>
             <p className="text-sm text-[#8D8D8D]">₹ 16,995.00</p>

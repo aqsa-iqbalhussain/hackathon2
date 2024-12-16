@@ -1,5 +1,5 @@
 import React from 'react';
-//import '@fortawesome/fontawesome-free/css/all.css';
+
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 
@@ -37,12 +37,12 @@ export default function HelpPage() {
           </p>
           <div className="list-disc list-inside text-xs text-black space-y-1">
             <p className='text-left leading-6 pl-5'>Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</p>
-            <p className='leading-6 pl-5'>If you enter your PAN information at checkout, you'll be able to pay for your order with PayTM or a local credit or debit card.</p>
+            <p className='leading-6 pl-5'>If you enter your PAN information at checkout, you &apos;ll be able to pay for your order with PayTM or a local credit or debit card.</p>
             <p className='leading-6 pl-5'>Apple Pay</p>
             </div>
             <br/>
             <p className="text-[#111111] text-sm ">
-            <a href='#' className='text-black underline'>Nike Members</a> can store multiple debit or credit cards for faster checkout. If you're not already a Member,{' '}
+            <a href='#' className='text-black underline'>Nike Members</a> can store multiple debit or credit cards for faster checkout. If you &apos;re not already a Member,{' '}
             <a href="#" className="text-black underline">join us today</a>.
           </p>
           </div>
@@ -69,16 +69,16 @@ export default function HelpPage() {
                for international orders.</p>
               <div>
                 <p className="font-semibold w-[389px] h-[28px]">Can I pay for my order with multiple methods?</p>
-                <p className="text-[#111111] text-sm">No,payment for Nike orders can't be split between multiple payment methods.</p>
+                <p className="text-[#111111] text-sm">No,payment for Nike orders can&apos;t be split between multiple payment methods.</p>
               </div>
               <div>
                 <p className="font-semibold">What payment method is accepted for SNKRS orders?</p>
                 <p className="text-[#111111] text-sm">You can use any accepted credit card to pay for your SNKRS order.</p>
               </div>
               <div>
-                <p className="font-semibold">Why don't I see Apple Pay as an option?</p>
+                <p className="font-semibold">Why don&apos;t I see Apple Pay as an option?</p>
                 <p className="text-[#111111] text-sm">
-                To see Apple Pay as an option in the Nike App or on Nike.com, you'll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you'll need to use Safari to use Apple Pay on Nike.com.
+                To see Apple Pay as an option in the Nike App or on Nike.com, you&apos;ll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you'll need to use Safari to use Apple Pay on Nike.com.
                 </p>
               </div>
 
@@ -104,7 +104,7 @@ export default function HelpPage() {
 
     <div className="mt-12">
         <h3 className="font-semibold mb-2 text-[#757575]">RELATED</h3>
-        <a href="#" className="block text-black underline text-left leading-6 pl-5">WHAT ARE NIKE'S DELIVERY OPTIONS?</a>
+        <a href="#" className="block text-black underline text-left leading-6 pl-5">WHAT ARE NIKE&apos;S DELIVERY OPTIONS?</a>
         <br/>
         <a href="#" className="block text-black underline text-left leading-6 pl-5">HOW DO I GET FREE DELIVERY ON NIKE ORDERS?</a>
       </div>
@@ -155,7 +155,7 @@ export default function HelpPage() {
               <div className="flex items-center justify-center mb-4">
               <img src="/photos/email.png" alt="email" />
               </div>
-              <p className='text-center text-black leading-5 font-semibold'>We'll reply within</p>
+              <p className='text-center text-black leading-5 font-semibold'>We&apos;ll reply within</p>
               <p className='text-center'>five business days</p>
               <br/>
               <br/>

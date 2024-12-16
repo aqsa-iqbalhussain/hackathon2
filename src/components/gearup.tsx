@@ -22,7 +22,7 @@ const GearUpSection = () => {
         {/* Men's Section */}
         <div className="relative">
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-medium">Shop Men's</h3>
+            <h3 className="text-lg font-medium">Shop Men&apos;s</h3>
             <div className="flex gap-2">
               <button
                 onClick={() => scrollHorizontally(mensRef, "left")}
@@ -49,7 +49,7 @@ const GearUpSection = () => {
                 className="w-[300px] h-[300px]"
               />
               <p className="mt-2 w-[219] h-[24] font-medium">Nike Dri-FIT ADV Techknit Ultra</p>
-              <p style={{color:'#757575'}} className="text-sm" >Men's Short-Sleeve</p>
+              <p style={{color:'#757575'}} className="text-sm" >Men&apos;s Short-Sleeve</p>
               <p style ={{color:'#757575'}} className="text-sm">Running Top</p>
               <p style={{ color: '#11111' }} className="text-sm">₹ 3,895 </p>
             </div>
@@ -60,7 +60,7 @@ const GearUpSection = () => {
                 className="w-[300px]h-[300px]"
               />
               <p className="mt-2 font-medium">Nike Dri-FIT Challenger</p>
-              <p style ={{color:'#757575'}} className="text-sm">Men's 18cm( approx.) 2-</p>
+              <p style ={{color:'#757575'}} className="text-sm">Men&apos;s 18cm( approx.) 2-</p>
               <p style ={{color:'#757575'}} className="text-sm">in-1 Versatile Shorts</p>
               <p className="text-sm text-black">₹ 2,495</p>
             </div>
@@ -81,7 +81,7 @@ const GearUpSection = () => {
         {/* Women's Section */}
         <div className="relative">
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-medium">Shop Women's</h3>
+            <h3 className="text-lg font-medium">Shop Women &apos;s</h3>
             <div className="flex gap-2">
               <button
                 onClick={() => scrollHorizontally(womensRef, "left")}
@@ -105,10 +105,10 @@ const GearUpSection = () => {
               <img
                 src="photos/gearup1.png"
                 alt="Nike Dri-FIT ADV Run Division"
-                className="w-[300] h-[300]"
+                className="w-[200] h-[200]"
               />
               <p className="mt-2 font-medium">Nike Dri-FIT ADV Run Division</p>
-              <p style={{color:'#757575'}}  className="text-sm">Women's Long-Sleeve</p>
+              <p style={{color:'#757575'}}  className="text-sm">Women &apos;s Long-Sleeve</p>
               <p style={{color:'#757575'}} className="text-sm">Running Top</p>
               <p className="text-sm text-black">₹ 5,295</p>
             </div>
@@ -116,10 +116,10 @@ const GearUpSection = () => {
               <img
                 src="photos/gearup2.png"
                 alt="Nike Fast"
-                className="w-[300] h-[300]"
+                className="w-[200] h-[200]"
               />
               <p className="mt-2 font-medium">Nike Fast</p>
-              <p style={{color:'#757575'}} className="text-sm">Women's Mid-Rise 7/8 Running Leggings with pockets</p>
+              <p style={{color:'#757575'}} className="text-sm">Women &apos;s Mid-Rise 7/8 Running Leggings with pockets</p>
               <p className="text-sm text-black">₹ 3,795</p>
             </div>
 
@@ -127,10 +127,10 @@ const GearUpSection = () => {
               <img
                 src="photos/niketshirt.webp"
                 alt="Nike Dri-FIT ADV Run Division"
-                className="w-[300] h-[300]"
+                className="w-[200] h-[200]"
               />
               <p className="mt-2 font-medium">Nike Dri-FIT ADV Run Division</p>
-              <p style={{color:'#757575'}}  className="text-sm">Women's Short-Sleeve</p>
+              <p style={{color:'#757575'}}  className="text-sm">Women&apos;s Short-Sleeve</p>
               <p style={{color:'#757575'}} className="text-sm">Running Top</p>
               <p className="text-sm text-black">₹ 5,295</p>
             </div>

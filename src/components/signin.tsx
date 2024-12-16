@@ -43,7 +43,7 @@ const Signin = () => {
         </div>
 
         <p className="text-sm text-[#8D8D8D] text-center h-[30px] ]">
-          By logging in, you agree to Nike's{" "}
+          By logging in, you agree to Nike &apos; s
      <span className="underline text-[#8D8D8D] cursor-pointer">Privacy Policy</span>{" "}
      and{" "}
      <span className="underline text-[#8D8D8D] cursor-pointer">Term of Use</span>.

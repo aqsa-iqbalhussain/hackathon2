@@ -96,7 +96,7 @@ const Signup = () => {
         </div>
 
         <p className="text-xs text-[#8D8D8D] text-center h-[30px] ]">
-          By creating an account, you agree to Nike's{" "}
+          By creating an account, you agree to Nike &apos;s{" "}
      <span className="underline text-[#8D8D8D] cursor-pointer">Privacy Policy</span>{" "}
      and{" "}
      <span className="underline text-[#8D8D8D] cursor-pointer">Term of Use.</span>.

@@ -16,7 +16,7 @@ export default function Essentials() {
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
-            Men's
+            Men &apos;s
           </button>
         </div>
 
@@ -28,7 +28,7 @@ export default function Essentials() {
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
-            Women's
+            Women&apos;s
           </button>
         </div>
 
@@ -40,7 +40,7 @@ export default function Essentials() {
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
-            Kid's
+            Kid &apos;s
           </button>
         </div>
       </div>
