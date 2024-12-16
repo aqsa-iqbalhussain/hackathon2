@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import Image from "next/image";
 
 export default function CartPage() {
   return (
@@ -22,7 +23,7 @@ export default function CartPage() {
 
           {/* Item 1 */}
           <div className="flex flex-wrap border-b pb-6 mb-6 items-start">
-            <img
+            < Image
               src="/photos/cartmen.jpg"
               alt="Nike Product"
               className="w-24  object-cover rounded"

@@ -183,7 +183,7 @@ export default function CheckoutPage() {
       {/* Product List */}
       <div className="mt-6 space-y-4">
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             src="/photos/cartmen.jpg"
             alt="Nike Shirt"
             className="rounded-md w-[208px] h-[208px]"
@@ -197,7 +197,7 @@ export default function CheckoutPage() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             src="/photos/nike97.jpg"
             alt="Nike Shoes"
             className="rounded-md w-[208px] h-[208px]"

@@ -78,7 +78,7 @@ export default function HelpPage() {
               <div>
                 <p className="font-semibold">Why don&apos;t I see Apple Pay as an option?</p>
                 <p className="text-[#111111] text-sm">
-                To see Apple Pay as an option in the Nike App or on Nike.com, you&apos;ll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you'll need to use Safari to use Apple Pay on Nike.com.
+                To see Apple Pay as an option in the Nike App or on Nike.com, you&apos;ll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you&apos;ll need to use Safari to use Apple Pay on Nike.com.
                 </p>
               </div>
 
