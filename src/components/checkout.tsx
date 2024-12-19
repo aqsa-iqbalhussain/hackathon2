@@ -186,7 +186,8 @@ export default function CheckoutPage() {
           <Image
             src="/photos/cartmen.jpg"
             alt="Nike Shirt"
-            className="rounded-md w-[208px] h-[208px]"
+            width={200}
+            height={200}
           />
           <div>
             <h3 className="text-sm font-medium">Nike Dri-FIT ADV TechKnit Ultra Men &apos;s Short-Sleeve Running Top</h3>
@@ -200,7 +201,8 @@ export default function CheckoutPage() {
           <Image
             src="/photos/nike97.jpg"
             alt="Nike Shoes"
-            className="rounded-md w-[208px] h-[208px]"
+             width={200}
+             height={200}
           />
           <div>
             <h3 className="text-sm font-medium">Nike Air Max 97 SE Men &apos;s Shoes</h3>

@@ -26,7 +26,8 @@ export default function CartPage() {
             < Image
               src="/photos/cartmen.jpg"
               alt="Nike Product"
-              className="w-24  object-cover rounded"
+              width={200}
+              height={200}
             />
             <div className="ml-4 flex-1 text-[#757575] leading-tight">
               <h3 className="text-lg text-black">Nike Dri-FIT ADV TechKnit Ultra</h3>
@@ -48,6 +49,13 @@ export default function CartPage() {
 
           {/* Item 2 */}
           <div className="flex flex-wrap border-b pb-6 mb-6 items-start">
+            < Image
+              src="/photos/nike97.jpg"
+              alt="Nike Product"
+              width={200}
+              height={200}
+            />
+        
             <div className="ml-4 flex-1 text-[#757575] flex flex-col leading-6">
               <h3 className="text-black text-lg mt-1 text-center lg:text-left">Nike Air Max 97 SE</h3>
               <p className="text-sm text-[#757575] mt-1 text-center lg:text-left">Men &apos;s Shoes</p>
@@ -66,6 +74,7 @@ export default function CartPage() {
             <div className="text-right mt-2 w-full md:w-auto">MRP: ₹ 16,995.00</div>
           </div>
         </div>
+        
 
         {/* Summary Section */}
         <div className="bg-white p-4 md:p-6 rounded-lg w-full md:w-[400px] lg:w-[350px] h-auto">
