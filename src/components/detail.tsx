@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import Image from 'next/image';
+
 import { LuShoppingCart } from "react-icons/lu";
 
 export default function ProductDetail() {
@@ -9,9 +11,11 @@ export default function ProductDetail() {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         {/* Left Side: Hero Image */}
         <div className="">
-          <img
+          <Image
             alt="hero"
             src="/photos/product3.png"
+            width={500}
+            height={500}
             className="object-cover object-center rounded h-[653px] top-[110px] "
           />
         </div>

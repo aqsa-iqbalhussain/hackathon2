@@ -1,17 +1,11 @@
 import React from "react";
-import Image from 'next/image';
-
+import { SiNike } from "react-icons/si";
 const Signup = () => {
   return (
     <div className="flex flex-col items-center w-full max-w-sm mx-auto p-6">
-        <div className="flex items-center mb-2 md:mb-0">
-            <Image
-              src="/photos/Logo_nike_principal.jpg"
-              alt="Nike Logo"
-              width={58.85}
-              height={20.54}
-            />
-          </div>
+          <div className="flex items-center">
+                                <SiNike className="w-[50px] h-[20px] md:w-[60px] md:h-[24px]" />
+                              </div>
           <div className="flex flex-col items-center w-full max-w-sm mx-auto p-6">
       {/* Header */}
       <h2 className="text-center font-bold text-1xl">BECOME A NIKE MEMBER</h2>

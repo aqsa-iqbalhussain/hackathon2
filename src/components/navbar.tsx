@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { SiJordan } from "react-icons/si";
 
@@ -17,7 +18,9 @@ const Navbar = () => {
 
           {/* Logo Section */}
           <div className="flex items-center text-2xl md:text-3xl text-black">
+            <Link href="/">
             <SiJordan />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -50,7 +53,7 @@ const Navbar = () => {
           <div
             className="absolute right-4 top-12 bg-white shadow-lg py-2 px-4 space-y-2 text-sm text-gray-700 w-48 z-50 md:hidden"
           >
-            <a href="#" className="block hover:text-gray-600">Find a Store</a>
+            <a href="checkout" className="block hover:text-gray-600">Find a Store</a>
             <a href="contactus" className="block hover:text-gray-600">Help</a>
             <a href="joinus" className="block hover:text-gray-600">Join Us</a>
             <a href="signin" className="block hover:text-gray-600">Sign In</a>

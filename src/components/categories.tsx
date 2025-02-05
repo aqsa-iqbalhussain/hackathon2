@@ -39,12 +39,12 @@ const Category =()=>{
             {/* kids categories */}
 
             <div>
-          <h3 className="text-lg font-medium mb-4">Kid &apos;s</h3>
+          <h3 className="text-lg font-medium mb-4">Kid&apos;s</h3>
           <ul className="space-y-2 text-sm text-gray-600  w-[184px] h-[144px]">
             <li>Infant & Toddler Shoes</li>
-            <li>Kid &apos;s Shoesr</li>
-            <li>Kid &apos;s Jordan Shoes</li>
-            <li>Kid &apos;s Basketball Shoes</li>
+            <li>Kid&apos;s Shoesr</li>
+            <li>Kid&apos;s Jordan Shoes</li>
+            <li>Kid&apos;s Basketball Shoes</li>
           </ul>
         </div>
       </div>

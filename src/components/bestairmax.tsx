@@ -1,48 +1,46 @@
 "use client";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { Product } from "../../types/products";
+import { allProducts, four } from "@/sanity/lib/queries";
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
+import { addToCart } from "@/app/actions/actions";
+import Swal from "sweetalert2";
 
 export default function BestAir() {
+    const [products, setProducts] = useState<Product[]>([]);
+    useEffect(()=>{
+      async function fetchedProducts(){
+        const fetchedProducts : Product[] = await client.fetch(four)
+        setProducts(fetchedProducts)
+      }
+      fetchedProducts();
+        
+    },[])
+
+    const handleAddToCart = (e: React.MouseEvent, product : Product) => {
+      e.preventDefault();
+      Swal.fire({
+
+        position : "top-right",
+        icon : "success",
+        title : `${product.productName} added to cart`,
+        showConfirmButton : false,
+        timer : 1000,
+      })
+ 
+      
+      addToCart(product);
+      
+
+    }
+
   // Products Array
-  const products = [
-    {
-      id: 1,
-      name: "Nike Air Max Pulse",
-      type: "Women's Shoes",
-      price: "₹ 13,995",
-      image: "/photos/bestairmax1.png",
-    },
-    {
-      id: 2,
-      name: "Nike Air Max Pulse",
-      type: "Men's Shoes",
-      price: "₹ 13,995",
-      image: "/photos/bestairmax2.png",
-    },
-    {
-      id: 3,
-      name: "Nike Air Max 97 SE",
-      type: "Men's Shoes",
-      price: "₹ 16,995",
-      image: "/photos/bestairmax3.png",
-    },
-    {
-      id: 4,
-      name: "Nike Air Max 97 SE",
-      type: "Men's Shoes",
-      price: "₹ 15,995",
-      image: "/photos/bestairmax4.webp",
-    },
-    {
-      id: 5,
-      name: "Nike Air Max 97 SE",
-      type: "Men's Shoes",
-      price: "₹ 15,995",
-      image: "/photos/bestairmax5.webp",
-    },
-  ];
+ 
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -56,53 +54,46 @@ export default function BestAir() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Header */}
-      <header className="text-center py-8 bg-white shadow-md">
-        <h1 className="text-2xl font-bold">Best of Air Max</h1>
-      </header>
 
-      {/* Main Section */}
-      <main className="container mx-auto px-4 py-12 relative">
-        {/* Navigation Buttons */}
-        <button
-          onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-200 z-10"
+      <h1 className="text-2xl font-bold text-center mb-6">
+        BestAirMax
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {products.map((product)=>(
+        <div key ={product._id}
+        className="boeder rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200"
         >
-          <FaArrowLeft className="text-xl" />
-        </button>
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-200 z-10"
-        >
-          <FaArrowRight className="text-xl" />
-        </button>
+          {product.productName}
 
-        {/* Product Carousel */}
-        <div
-          ref={containerRef}
-          className="flex gap-8 overflow-x-auto scrollbar-hide"
-        >
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="min-w-[250px] bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform"
-            >
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={250}
-                height={256}
-                className="w-full h-64 object-cover"
+          <Link href ={`/product/${product.slug.current}`}>
+          {product.image &&(
+            <Image
+            src={urlFor(product.image).url()}
+              alt="image"
+              width={200}
+              height={200}
+              className=" w-full h-48 object-cover rounded-md"
               />
-              <div className="p-4 text-center">
-                <h2 className="text-lg font-bold">{product.name}</h2>
-                <p className="text-sm text-gray-500">{product.type}</p>
-                <p className="text-lg font-bold mt-2">{product.price}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </main>
+            
+          )}
+          <h2 className="text-lg font-semibold mt-4">{product.productName}</h2>
+          <p className="text-gray-500 mt-2">
+          {product.price ? `$${product.price}` : "price not available"}
+          </p>
+          <button className="bg-gradient-to-r from-blue-400 to-purple-500 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg  
+          hover:scale-110 transition-transform duration-300  ease-in-out"
+          onClick = {(e)=>handleAddToCart(e, product)}
+          >
+            Add to Cart
+
+          </button>
+
+          </Link>
+          </div>
+      ))}
+    
+     
+    </div>
     </div>
   );
 }

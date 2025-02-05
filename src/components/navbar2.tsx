@@ -4,6 +4,8 @@ import { GoSearch } from "react-icons/go";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { SiNike } from "react-icons/si";
+import { FaTimes } from 'react-icons/fa'; 
+import Link from "next/link";// For the close icon
 
 const Navbar2 = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,7 +61,9 @@ const Navbar2 = () => {
           {/* Icon Section */}
           <div className="flex items-center space-x-4">
             <IoMdHeartEmpty className="text-black w-6 h-6" />
+            <Link href="../cart">
             <MdOutlineShoppingBag className="text-black w-6 h-6" />
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,43 +71,44 @@ const Navbar2 = () => {
             className="md:hidden focus:outline-none text-gray-700"
             onClick={toggleMobileMenu}
           >
-            {/* Hamburger Icon */}
-            <div className="space-y-1">
-              <div className="w-6 h-0.5 bg-black"></div>
-              <div className="w-6 h-0.5 bg-black"></div>
-              <div className="w-6 h-0.5 bg-black"></div>
-            </div>
+            {/* Conditional rendering of Hamburger or Close icon */}
+            {isMobileMenuOpen ? (
+              <FaTimes className="w-6 h-6 text-black" /> // Close (X) Icon
+            ) : (
+              <div className="space-y-1">
+                <div className="w-6 h-0.5 bg-black"></div>
+                <div className="w-6 h-0.5 bg-black"></div>
+                <div className="w-6 h-0.5 bg-black"></div>
+              </div>
+            )}
           </button>
-        </div>
 
-        {/* Right-Side Dropdown Menu for Mobile */}
-        {isMobileMenuOpen && (
-          <div
-            className="absolute right-4 top-12 bg-white shadow-lg py-2 px-4 w-48 rounded-md z-50 md:hidden"
-            style={{ position: "absolute" }}
-          >
-            <nav className="flex flex-col space-y-2 text-sm font-medium text-gray-700">
-              <a href="newfeature" className="text-black hover:underline">
-                New & Featured
-              </a>
-              <a href="cartpg" className="text-black hover:underline">
-                Men
-              </a>
-              <a href="#" className="text-black hover:underline">
-                Women
-              </a>
-              <a href="#" className="text-black hover:underline">
-                Kids
-              </a>
-              <a href="#" className="text-black hover:underline">
-                Sale
-              </a>
-              <a href="#" className="text-black hover:underline">
-                SNKRS
-              </a>
-            </nav>
-          </div>
-        )}
+          {/* Right-Side Dropdown Menu for Mobile */}
+          {isMobileMenuOpen && (
+            <div className="absolute right-4 top-12 bg-white shadow-lg py-2 px-4 w-48 rounded-md z-50 md:hidden">
+              <nav className="flex flex-col space-y-2 text-sm font-medium text-gray-700">
+                <a href="newfeature" className="text-black hover:underline">
+                  New & Featured
+                </a>
+                <a href="cartpg" className="text-black hover:underline">
+                  Men
+                </a>
+                <a href="#" className="text-black hover:underline">
+                  Women
+                </a>
+                <a href="#" className="text-black hover:underline">
+                  Kids
+                </a>
+                <a href="#" className="text-black hover:underline">
+                  Sale
+                </a>
+                <a href="#" className="text-black hover:underline">
+                  SNKRS
+                </a>
+              </nav>
+            </div>
+          )}
+        </div>
       </header>
     </>
   );

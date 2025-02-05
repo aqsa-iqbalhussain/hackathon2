@@ -20,6 +20,7 @@ const Dontmiss = () => {
             alt="Nike Air Max Pulse"
             layout="fill"
             objectFit="cover"
+            className="object-cover w-full h-full" // Ensure image scales correctly
           />
         </div>
 

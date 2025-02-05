@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Essentials() {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -10,21 +11,25 @@ export default function Essentials() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* Men's Section */}
         <div className="relative group aspect-w-16 aspect-h-9">
-          <img
+          <Image
             src="/photos/essential1.png"
             alt="Men's"
+            width={500}
+            height={500}
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
-            Men &apos;s
+            Men&apos;s
           </button>
         </div>
 
         {/* Women's Section */}
         <div className="relative group aspect-w-16 aspect-h-9">
-          <img
+          <Image
             src="/photos/essential2.png"
             alt="Women's"
+            width={500}
+            height={500}
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
@@ -34,13 +39,15 @@ export default function Essentials() {
 
         {/* Kids' Section */}
         <div className="relative group aspect-w-16 aspect-h-9">
-          <img
+          <Image
             src="/photos/essential3.png"
             alt="Kid's"
+            width={500}
+            height={500}
             className="w-full h-full object-cover rounded-lg"
           />
           <button className="absolute left-4 bottom-4 bg-white py-2 px-4 text-sm font-medium rounded-full shadow-lg group-hover:scale-105 transition-transform">
-            Kid &apos;s
+            Kid&apos;s
           </button>
         </div>
       </div>
